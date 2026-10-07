@@ -102,7 +102,7 @@ const KNOWLEDGE_HTML = `
 <h2>Kanban</h2>
 </div>
 </header>
-<p class="intro">Kanban visualisiert Wissensarbeit und deren Bewegung durch einen Workflow. Begrenzte parallele Arbeit unterstützt Fokus und Fluss.</p>
+<p class="intro">Kanban ist eine Methode Arbeitsabläufe sichtbar zu machen und dadurch den Fluss der Arbeit zu verbessern.</p>
 <div class="kanban visual">
 <div>
 <h4>Backlog <small>4</small>
@@ -173,21 +173,21 @@ const KNOWLEDGE_HTML = `
 <h2>Refinement</h2>
 </div>
 </header>
-<p class="intro">Refinement ist die fortlaufende Verfeinerung des Product Backlogs. Einträge werden zerlegt, konkretisiert, geordnet und mit notwendigen Details ergänzt. Refinement ist im Scrum Guide eine Aktivität, jedoch kein eigenes Scrum Event.</p>
+<p class="intro">Refinement ist die fortlaufende Verfeinerung des Product Backlogs. Einträge werden zerlegt, konkretisiert, geordnet und mit notwendigen Details ergänzt.</p>
 <div class="steps">
 <article>
 <b>1</b>
-<h3>Klären</h3>
-<p>Ziel, Nutzen, Randbedingungen und offene Fragen verstehen.</p>
+<h3>Klärung von Anforderungen</h3>
+<p>Ziel, Nutzen, Randbedingungen und offene Fragen verstehen. Tiefere Einsicht, was der Kunde genau will, um Missverständnisse zu vermeiden.</p>
 </article>
 <article>
 <b>2</b>
-<h3>Zerlegen</h3>
+<h3>Zerlegung von Anforderungen</h3>
 <p>Große Anforderungen in lieferbare Einheiten aufteilen.</p>
 </article>
 <article>
 <b>3</b>
-<h3>Vorbereiten</h3>
+<h3>Vorbereitung von Anforderungen</h3>
 <p>Akzeptanzkriterien, Abhängigkeiten, Priorität und Aufwand transparent machen.</p>
 </article>
 </div>
@@ -237,7 +237,7 @@ const KNOWLEDGE_HTML = `
 <h2>PI Planning</h2>
 </div>
 </header>
-<p class="intro">PI Planning ist ein taktbasiertes Planungsereignis für einen Agile Release Train (ART). Teams und Stakeholder richten sich auf eine gemeinsame Mission aus, planen PI Objectives, machen Abhängigkeiten sichtbar und behandeln Risiken.</p>
+<p class="intro">PI Planning ist ein taktbasiertes Planungsereignis für einen Agile Release Train (ART). Das Kürzel PI steht für <strong>Program Increment</strong>. Teams und Stakeholder richten sich auf eine gemeinsame Mission aus, planen PI Objectives, machen Abhängigkeiten sichtbar und behandeln Risiken.</p>
 <div class="agenda visual">
 <h3>PI Planning Agenda <small>typischer zweitägiger Ablauf</small>
 </h3>
@@ -320,6 +320,39 @@ const KNOWLEDGE_HTML = `
 </article>
 </div>
 </div>
+<details class="pi-explanation">
+<summary>Ausführliche Erklärung des PI Plannings</summary>
+<div class="pi-explanation-grid">
+<article>
+<h3>Tag 1</h3>
+<ul>
+<li><b>Präsentation des Geschäftskontextes:</b> Die Business Owner stellen die Vision des Portfolios vor. Sie bewerten die aktuelle Situation des Unternehmens, um die Teams bei der Planung des folgenden PI zu unterstützen.</li>
+<li>Außerdem wird erläutert, inwieweit die bestehenden Lösungen die aktuellen Kundenbedürfnisse erfüllen.</li>
+<li><b>Produkt-/Lösungsvision:</b> Der Produktmanager stellt die Produkt- und Lösungsvision vor.</li>
+<li><b>Architekturvision und Entwicklungspraktiken:</b> Ein Systemarchitekt stellt die Architekturvision vor. Ein leitender Entwicklungsmanager stellt gegebenenfalls Änderungen der Entwicklungspraktiken für das folgende PI vor.</li>
+<li><b>Planungskontext:</b> Der Release Train Engineer (RTE) stellt den Planungskontext vor, der aus dem Prozess und den erwarteten Ergebnissen besteht.</li>
+<li><b>Team Breakouts:</b> Agile Teams bereiten die einzelnen Iterationen des Program Increments vor, indem sie Backlog Items (Stories) erstellen und deren Aufwand in Story Points schätzen.</li>
+<li>Ein zentrales Ergebnis dieses Prozesses sind die vorläufigen Team-PI-Ziele. Jedes Team fügt Features und Abhängigkeiten zum Program Board (ART Planning Board) hinzu.</li>
+<li>In dieser Phase identifizieren die Teams auch mögliche Risiken und entscheiden, ob sie Features umsetzen können oder nicht erreichen können.</li>
+<li><b>Überprüfung des Planentwurfs:</b> Die Teams präsentieren ihre Ergebnisse den Business Ownern, den Stakeholdern, dem Produktmanagement und den anderen Teams und erhalten Feedback.</li>
+<li><b>Management Review und Problemlösung:</b> Der RTE und das Management besprechen mögliche Schwierigkeiten der Planentwürfe. Der RTE moderiert diesen Prozess und bindet die wichtigsten Interessengruppen aktiv ein.</li>
+</ul>
+</article>
+<article>
+<h3>Tag 2</h3>
+<ul>
+<li><b>Anpassungen der Planung:</b> Das Management präsentiert die Ergebnisse und Anpassungen des ersten Tages.</li>
+<li><b>Team Breakouts:</b> Die Teams setzen die Planung fort und passen die Iterationen und Team-PI-Objectives an. Schließlich weisen die Business Owner den resultierenden PI Objectives einen Geschäftswert zu.</li>
+<li><b>Abschließende Planüberprüfung:</b> Die Teams präsentieren ihre Ergebnisse und mögliche Risiken. Die Business Owner müssen ihrem Plan zustimmen; erst dann können sie ihre PI Objectives vorstellen.</li>
+<li><b>ART PI-Risiken:</b> Der ART bespricht die Risiken und kategorisiert sie in die Kategorien resolved, owned, accepted und migrated.</li>
+<li><b>Confidence Vote:</b> Am Ende des PI Planning wird eine Vertrauensabstimmung durchgeführt, nachdem die Abhängigkeiten behandelt und die Risiken dokumentiert wurden.</li>
+<li>Die Teams stimmen darüber ab, wie wahrscheinlich es ist, dass sie ihre Ziele erreichen werden. Diese Abstimmung erfolgt mit fünf Fingern und wird daher auch „Fist of Five“ genannt.</li>
+<li><b>Überarbeitung des Plans:</b> Die Teams passen die PI-Ziele bei Bedarf an.</li>
+<li><b>Retrospektive Planung und Fortführung:</b> Der Release Train Engineer evaluiert das Event und dokumentiert die gewonnenen Erkenntnisse.</li>
+</ul>
+</article>
+</div>
+</details>
 <div class="cards two">
 <article>
 <h3>Ergebnisse</h3>
