@@ -268,7 +268,8 @@ main {
 }
 .math {
   color: var(--muted);
-  overflow: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 .detail {
   padding: 23px;
