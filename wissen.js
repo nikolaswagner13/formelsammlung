@@ -45,7 +45,7 @@ const KNOWLEDGE_HTML = `
 <h3>Verantwortlichkeiten</h3>
 <ul>
 <li>
-<b>Product Owner:</b> maximiert den Produktwert und managt das Product Backlog.</li>
+<b>Product Owner:</b> verantwortlich für das Product Backlog (Anpassungen / Priorisierungen) und in sehr engem Austausch mit den Stakeholdern.</li>
 <li>
 <b>Scrum Master:</b> unterstützt die wirksame Anwendung von Scrum.</li>
 <li>
