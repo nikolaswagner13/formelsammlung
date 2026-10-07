@@ -21,9 +21,9 @@
   function card(f) {
     const symbols = f.symbols.map(s => `<tr><td><strong>${s[0]}</strong></td><td>${s[1]}</td><td>${s[2]}</td></tr>`).join('');
     return `<details class="formula-card" id="${f.id}">
-      <summary><div><span class="card-category">${f.category}</span><h2 class="card-title">${f.title}</h2><div class="card-formula">\(${f.formula}\)</div></div></summary>
+      <summary><div><span class="card-category">${f.category}</span><h2 class="card-title">${f.title}</h2><div class="card-formula">\\(${f.formula}\\)</div></div></summary>
       <div class="card-body">
-        <div class="formula-display">\[${f.formula}\]<button class="copy-button" data-copy="${encodeURIComponent(f.formula)}">Formel kopieren</button></div>
+        <div class="formula-display">\\[${f.formula}\\]<button class="copy-button" data-copy="${encodeURIComponent(f.formula)}">Formel kopieren</button></div>
         <p>${f.explanation}</p>
         <h3>Formelzeichen und Einheiten</h3>
         <table class="symbols"><thead><tr><th>Zeichen</th><th>Bedeutung</th><th>Einheit</th></tr></thead><tbody>${symbols}</tbody></table>
@@ -54,7 +54,10 @@
     list.querySelectorAll('.copy-button').forEach(b => b.addEventListener('click', e => {
       e.preventDefault(); e.stopPropagation(); copyText(decodeURIComponent(b.dataset.copy), b);
     }));
-    if (window.MathJax?.typesetPromise) MathJax.typesetPromise([list]);
+    if (window.MathJax?.typesetPromise) {
+      MathJax.typesetClear([list]);
+      MathJax.typesetPromise([list]);
+    }
   }
   search.addEventListener('input', e => { state.query = e.target.value.trim().toLowerCase(); render(); });
   document.getElementById('clearFilters').addEventListener('click', () => { state.category = 'Alle Kategorien'; state.query = ''; search.value = ''; render(); });
@@ -69,5 +72,9 @@
     document.documentElement.dataset.theme = next; localStorage.setItem('formula-theme', next);
   });
   document.getElementById('formulaCount').textContent = FORMULAS.length;
-  render();
+  if (window.MathJax?.startup?.promise) {
+    MathJax.startup.promise.then(render).catch(render);
+  } else {
+    render();
+  }
 })();

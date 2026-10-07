@@ -60,3 +60,8 @@ Beispiel:
 ## Wichtiger Hinweis
 
 Die Website ist trotz der sichtbaren Bezeichnung „Private technische Formelsammlung“ öffentlich erreichbar, solange GitHub Pages öffentlich betrieben wird. Keine vertraulichen Daten, Kennwörter oder internen Unternehmensinformationen veröffentlichen.
+
+
+## Fehlerbehebung bei Formeln
+
+Die Formeln werden mit MathJax aus dem CDN `cdn.jsdelivr.net` dargestellt. Eine Internetverbindung ist beim Laden der Seite erforderlich. Falls Formeln als LaTeX-Text erscheinen, die Seite mit `Strg + F5` vollständig neu laden und prüfen, ob ein Browser- oder Netzwerkfilter `cdn.jsdelivr.net` blockiert.
