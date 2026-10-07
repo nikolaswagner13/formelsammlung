@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Technische Formelsammlung mit Erklärungen für Technik und Antriebstechnik.">
+  <meta name="theme-color" content="#0b5cad">
+  <title>Technische Formelsammlung</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+  <script defer src="formeln.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+  <header class="topbar">
+    <button id="menuButton" class="icon-button menu-button" aria-label="Navigation öffnen" aria-expanded="false">☰</button>
+    <div class="brand">
+      <span class="brand-mark">Σ</span>
+      <div><strong>Technische Formelsammlung</strong><small>Technik &amp; Antriebstechnik</small></div>
+    </div>
+    <div class="top-actions">
+      <button id="printButton" class="icon-button" title="Druckansicht" aria-label="Druckansicht">⎙</button>
+      <button id="themeButton" class="icon-button" title="Darstellung wechseln" aria-label="Darstellung wechseln">◐</button>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside id="sidebar" class="sidebar" aria-label="Kategorien">
+      <div class="side-heading">Kategorien</div>
+      <nav id="categoryNav"></nav>
+      <div class="side-footer">
+        <span>Private technische Formelsammlung</span>
+        <a href="https://github.com/nikolaswagner13" target="_blank" rel="noopener">GitHub-Profil ↗</a>
+      </div>
+    </aside>
+
+    <main id="main" class="main">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">NIKOLAS WAGNER</p>
+          <h1>Technische Formelsammlung</h1>
+          <p>Formeln, Erklärungen und Rechenbeispiele für Technik und Antriebstechnik.</p>
+        </div>
+        <div class="hero-badge"><strong id="formulaCount">0</strong><span>Formeln</span></div>
+      </section>
+
+      <section class="toolbar" aria-label="Suche und Filter">
+        <label class="search-box">
+          <span aria-hidden="true">⌕</span>
+          <input id="searchInput" type="search" placeholder="Formel, Zeichen oder Begriff suchen …" autocomplete="off">
+        </label>
+        <button id="clearFilters" class="secondary-button">Filter zurücksetzen</button>
+      </section>
+
+      <section class="content-grid">
+        <div>
+          <div id="activeFilter" class="active-filter">Alle Kategorien</div>
+          <div id="formulaList" class="formula-list" aria-live="polite"></div>
+          <div id="emptyState" class="empty-state" hidden>
+            <strong>Keine passende Formel gefunden.</strong>
+            <span>Ändere den Suchbegriff oder setze die Filter zurück.</span>
+          </div>
+        </div>
+        <aside class="toc-panel">
+          <div class="toc-title">Inhaltsverzeichnis</div>
+          <nav id="toc"></nav>
+        </aside>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <span>© 2026 Nikolas Wagner</span>
+    <span>Persönliche technische Formelsammlung</span>
+  </footer>
+</body>
+</html>
