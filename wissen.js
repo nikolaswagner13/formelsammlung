@@ -36,26 +36,10 @@ const KNOWLEDGE_HTML = `
 <h2>Scrum</h2>
 </div>
 </header>
-<p class="intro">Scrum unterstützt Teams dabei, in komplexen Umgebungen schrittweise Wert zu liefern. Der Sprint bildet den festen Rahmen, in dem geplant, umgesetzt, geprüft und verbessert wird.</p>
-<div class="scrum-flow visual">
-<div>Product Goal<small>langfristige Richtung</small>
-</div>
-<i>→</i>
-<div>Product Backlog<small>geordnete Arbeit</small>
-</div>
-<i>→</i>
-<div class="accent">Sprint Planning<small>Ziel und Plan</small>
-</div>
-<i>→</i>
-<div class="cycle">
-<b>Sprint</b>
-<small>Daily · Entwicklung · Qualität</small>
-</div>
-<i>→</i>
-<div class="success">Increment<small>nutzbares Ergebnis</small>
-</div>
-<p>Sprint Review: Produkt und nächste Schritte prüfen · Sprint Retrospective: Zusammenarbeit verbessern</p>
-</div>
+<p class="intro">Scrum ist ein agiles Framework für das Projekt- und Produktmanagement, das komplexe Vorhaben in kurzen, wiederkehrenden Zyklen (sogenannten Sprints) bearbeitet.</p>
+<figure class="visual scrum-schema">
+<img src="assets/scrum-schema.png" alt="Schema des Scrum-Frameworks">
+</figure>
 <div class="cards three">
 <article>
 <h3>Verantwortlichkeiten</h3>

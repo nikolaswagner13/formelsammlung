@@ -428,6 +428,16 @@ main {
   background: var(--soft);
   overflow: auto;
 }
+.scrum-schema {
+  text-align: center;
+}
+.scrum-schema img {
+  display: block;
+  width: 100%;
+  max-height: 620px;
+  object-fit: contain;
+  border-radius: 10px;
+}
 .scrum-flow {
   display: flex;
   align-items: center;
