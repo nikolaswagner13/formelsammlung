@@ -1,1 +1,1 @@
-Optionales Bild hier als sprint-planning.png ablegen.
+Hier können Bilder, Screenshots und weitere Informationen für den Aufbau der Seite abgelegt werden.
