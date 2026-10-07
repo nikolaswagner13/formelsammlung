@@ -63,7 +63,7 @@ const KNOWLEDGE_HTML = `
 <article>
 <h3>Ereignisse</h3>
 <ul>
-<li>Sprint, maximal ein Monat</li>
+<li>Sprint, 1-4 Wochen</li>
 <li>Sprint Planning</li>
 <li>Daily Scrum, 15 Minuten</li>
 <li>Sprint Review</li>
@@ -74,11 +74,11 @@ const KNOWLEDGE_HTML = `
 <div class="cards two">
 <article>
 <h3>Sprint Planning</h3>
-<p>Das Scrum Team klärt gemeinsam, warum der Sprint wertvoll ist, was umgesetzt werden kann und wie die ausgewählte Arbeit erledigt wird.</p>
+<p>Das Scrum Team klärt gemeinsam, warum der Sprint wertvoll ist, was umgesetzt werden kann und wie die ausgewählte Arbeit erledigt wird. Dabei wird der Sprint Backlog erstellt und angepasst.</p>
 </article>
 <article>
 <h3>Daily Scrum</h3>
-<p>Die Developers prüfen den Fortschritt zum Sprint Goal und passen den Plan an. Das Daily ist kein Statusbericht an Führungskräfte.</p>
+<p>Die Developers klären drei relevante Fragen: Was habe ich seit dem letzten Daily erreicht? Was werde ich bis zum nächsten Daily tun? Welche Hindernisse stehen im Weg?</p>
 </article>
 <article>
 <h3>Sprint Review</h3>
@@ -86,7 +86,7 @@ const KNOWLEDGE_HTML = `
 </article>
 <article>
 <h3>Sprint Retrospective</h3>
-<p>Das Team plant Verbesserungen für Qualität, Zusammenarbeit, Prozesse und Werkzeuge.</p>
+<p>Das Team plant Verbesserungen für Qualität, Zusammenarbeit, Prozesse und Werkzeuge für den nächsten Sprint.</p>
 </article>
 </div>
 <figure class="placeholder">
