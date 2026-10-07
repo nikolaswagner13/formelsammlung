@@ -89,14 +89,8 @@ const KNOWLEDGE_HTML = `
 <p>Das Team plant Verbesserungen für Qualität, Zusammenarbeit, Prozesse und Werkzeuge für den nächsten Sprint.</p>
 </article>
 </div>
-<figure class="placeholder">
+<figure class="visual scrum-schema">
 <img src="assets/sprint-planning.png" alt="Sprint-Planning-Visualisierung">
-<div>
-<b>Bildplatzhalter</b>
-<strong>Sprint-Planning-Visualisierung</strong>
-<code>assets/sprint-planning.png</code>
-<small>Bild später unter diesem Dateinamen hochladen.</small>
-</div>
 </figure>
 </section>
 <!-- Hauptbereich: Kanban und Arbeitsfluss -->
